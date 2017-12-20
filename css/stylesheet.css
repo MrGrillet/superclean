@@ -1,0 +1,440 @@
+﻿/* Keep it clean */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	text-transform: none;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	text-transform: none;
+}                  
+
+
+
+/* END RESET CSS */
+
+/* Typeography */
+
+
+
+/*  FONTS  */
+
+@font-face {
+  font-family: 'Inter UI';
+  src: url('https://rsms.me/inter/inter-ui.css');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('https://fonts.googleapis.com/css?family=Ubuntu');
+}
+
+ h1,h2,h3,h4,h5,h6, th, .site-title {  
+  font-family: "Inter UI", "Ubuntu", helvetica, sans-serif;   
+  line-height: 1.6em;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+h2, h3, h4, h5, h6, th, strong {
+  font-weight: 600;
+}
+
+p, li, td {  
+  font-family       : "Inter UI", "Ubuntu", helvetica, sans-serif;  
+  font-weight       : 100;
+  font-size         : 16px;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 31px;
+
+}
+
+h3 {
+	font-size: 27px;
+}
+
+h4 {
+	font-size: 23px;
+}
+
+h5 {
+	font-size: 19px;	
+}
+
+h6 {
+	text-transform: uppercase;
+	font-size: 16px;
+	
+}
+
+/* LINKS */
+
+a {
+   color: black;
+   border-bottom: solid 1px #000;
+   text-decoration: none;
+}
+
+a:hover	{ 
+    color                   : black; 
+    text-decoration         : none;
+    border-bottom: solid 1px #3FFECA;;
+    background-color: #3FFECA;
+}
+
+/* Page Structure */
+
+.container {
+	background-color: #fff;
+	font-family: "Inter UI", "Ubuntu", helvetica, sans-serif;
+	 display: grid;
+	 max-width: 1200px;
+	 min-width: 900px;
+	 position: relative;
+	 margin: auto;
+	 grid-gap: 20px;
+	 grid-template-areas: 
+	    "nav nav"
+	    "header main"
+	    "footer footer";
+	 grid-template-columns: 400px auto;
+	 grid-template-rows: 60px 80% 120px;
+	 padding: 10px;
+}
+
+nav {	
+		grid-area: nav;
+		background-color: #fff;
+		text-align: right;
+}
+
+.main-navigation {
+
+}
+
+.nav-bar ul {
+ 	
+}
+
+.nav-bar li {
+	font-weight: 500;
+  	text-transform: uppercase;
+  	display: inline-block;
+  	margin-left: 10px; 
+  	text-transform: uppercase;
+}
+
+.nav-bar a {
+	color: #808080;
+    border-bottom: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-bar a:hover	{ 
+    color: black; 
+    text-decoration: none;
+    border-bottom: solid 1px #000 ;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+header {
+	grid-area: header;
+	background-color: #fff;
+	position: relative;
+}
+
+header li {
+	display: inline-block;
+}
+
+/*   Main Content    */
+
+main {
+	height: 1200px;
+	grid-area: main;
+	background-color: #fff;
+	overflow: auto;
+	padding-right: 10px;
+}
+
+article {	
+	margin-bottom: 150px;
+}
+
+.article-title h1 {
+	font-size: 50px;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+article p {
+	line-height: 1.4;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	max-width: 560px;
+
+}
+
+.lead {
+	font-size: 25px;
+	line-height: 1.2;
+}
+
+article ul, article ol {
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+article li {
+	margin-left: 10px;
+	line-height: 1.4;
+}
+
+.img-full {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}
+
+.img-center {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.img-right {
+	width: 320px;
+	height: auto;
+	float: right;
+	margin: 0 -100px 5px 10px;
+
+}
+
+.img-left {
+	width: 220px;
+	height: auto;
+	float: left;
+	margin: 0 10px 5px 0px;
+}
+
+figure {
+	display: block;
+	height: auto;
+	padding: 0px;
+	z-index: 1;
+}
+
+figure img {
+	margin-bottom: 0px;
+	z-index: 5;
+}
+
+figcaption {
+	background-color: #3FFECA;
+	color: #000;
+	padding: 10px;
+	margin-top: -50px;
+	z-index: 6;
+	position: relative;
+	line-height: 1.4;
+	font-size: 14px;
+	margin-left: 220px;
+}
+
+blockquote {
+	font-size: 20px;
+	margin: 20px 0 20px 0;
+	border-left: solid 3px ;
+	padding-left: 10px; 
+	width: 560px;
+
+}
+
+.project-card {
+	width: 620px;
+	float: left;
+	margin-right: 20px; 
+
+}
+
+.project-card-caption {
+	background-color: #3FFECA;
+	color: #000;
+	padding: 10px;
+	margin-top: -50px;
+	z-index: 6;
+	position: relative;
+	line-height: 1.4;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+
+.highlight {
+	background-color: #3FFECA;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.pull-quote {
+	display: block;
+	background-color: #3FFECA;
+	color: #000;
+	width: 320px;
+	padding: 10px;
+	margin: 0 -100px 5px 10px;
+	font-weight: 100;
+	float: right;
+}
+
+.article-meta {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	display: block;
+	width: 100%;
+}
+
+.article-share {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.article-share li {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.article-footer{
+	margin-top: 50px;
+	margin-bottom: 150px;
+	padding-top: 50px;
+	border-top: 3px solid #000;
+	width: 560px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+a.btn {
+	color  : black;
+	background-color: #fff; 
+    border: solid 3px #000;
+    padding: 10px;
+    text-decoration: none;
+    width: 120px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a:hover.btn  {
+	color  : #fff;
+	background-color: #000;
+    border: solid 3px #000;
+}
+
+.articles-listing {
+	margin-bottom: 150px;
+	width: 560px;
+	display: block;
+
+}
+
+.articles-title h3 {
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+
+.articles-excerpt {
+	display: block;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.articles-meta {
+	display: block;
+	width: 100%;
+	margin: 20px 0px 20px; 
+}
+
+table {
+    width               : 100%; 
+    margin-bottom       : 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align          : left;
+
+}
+
+th {
+
+    padding-top         : 1em;
+    padding-bottom      : .4em;
+    border-bottom       : solid 1px;
+    font-size           : 16px; 
+}
+
+tr {
+padding: 0px;
+}
+
+td {
+    padding         : 0.5em;
+}
+
+td.highlight {
+	 background-color: #3FFECA;
+	 padding         : 0.5em;
+}
+
+
+footer {
+	grid-area: footer;
+	background-color: #fff;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
+}
+
+footer li {
+	display: inline-block;
+}
+
+
+
