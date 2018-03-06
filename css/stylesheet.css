@@ -15,23 +15,66 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, figure, footer, header, 
+article, aside, figure, footer, header,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
 	margin: 0px;
 	padding: 0px;
 	text-transform: none;
-}                  
 
-
+}
 
 /* END RESET CSS */
 
 /* Typeography */
 
+h1,h2,h3,h4,h5,h6, th, .site-title {
+ font-family: "Inter UI", "Ubuntu", helvetica, sans-serif;
+ line-height: 1.6em;
+ margin-top: 14px;
+ margin-bottom: 14px;
+}
+
+h2, h3, h4, h5, h6, th, strong {
+ font-weight: 600;
+}
+
+p, li, td {
+ font-family       : "Inter UI", "Ubuntu", helvetica, sans-serif;
+ font-weight       : 100;
+ font-size         : 16px;
+}
+
+h1 {
+ font-size: 34px;
+}
+
+h2 {
+ font-size: 31px;
+
+}
+
+h3 {
+ font-size: 27px;
+}
+
+h4 {
+ font-size: 23px;
+}
+
+h5 {
+ font-size: 19px;
+}
+
+h6 {
+ text-transform: uppercase;
+ font-size: 16px;
+
+}
 
 
 /*  FONTS  */
+
 
 @font-face {
   font-family: 'Inter UI';
@@ -43,86 +86,46 @@ time, mark, audio, video {
   src: url('https://fonts.googleapis.com/css?family=Ubuntu');
 }
 
- h1,h2,h3,h4,h5,h6, th, .site-title {  
-  font-family: "Inter UI", "Ubuntu", helvetica, sans-serif;   
-  line-height: 1.6em;
-  margin-top: 14px;
-  margin-bottom: 14px;
-}
-
-h2, h3, h4, h5, h6, th, strong {
-  font-weight: 600;
-}
-
-p, li, td {  
-  font-family       : "Inter UI", "Ubuntu", helvetica, sans-serif;  
-  font-weight       : 100;
-  font-size         : 16px;
-}
-
-h1 {
-	font-size: 34px;
-}
-
-h2 {
-	font-size: 31px;
-
-}
-
-h3 {
-	font-size: 27px;
-}
-
-h4 {
-	font-size: 23px;
-}
-
-h5 {
-	font-size: 19px;	
-}
-
-h6 {
-	text-transform: uppercase;
-	font-size: 16px;
-	
-}
 
 /* LINKS */
 
+
 a {
-   color: black;
-   border-bottom: solid 1px #000;
-   text-decoration: none;
+   color										: black;
+   border-bottom						: solid 1px #000;
+   text-decoration					: none;
 }
 
-a:hover	{ 
-    color                   : black; 
+a:hover	{
+    color                   : black;
     text-decoration         : none;
-    border-bottom: solid 1px #3FFECA;;
-    background-color: #3FFECA;
+    border-bottom						: solid 1px #3FFECA;;
+    background-color				: #3FFECA;
 }
+
 
 /* Page Structure */
+
 
 .container {
 	background-color: #fff;
 	font-family: "Inter UI", "Ubuntu", helvetica, sans-serif;
-	 display: grid;
-	 max-width: 1200px;
-	 min-width: 900px;
-	 position: relative;
-	 margin: auto;
-	 grid-gap: 20px;
-	 grid-template-areas: 
+	max-width: 1200px;
+	min-width: 900px;
+	position: relative;
+	margin: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
 	    "nav nav"
 	    "header main"
 	    "footer footer";
-	 grid-template-columns: 400px auto;
-	 grid-template-rows: 60px 80% 120px;
-	 padding: 10px;
+	grid-template-columns: 400px auto;
+	grid-template-rows: 60px 80% 120px;
+	padding: 10px;
 }
 
-nav {	
+nav {
 		grid-area: nav;
 		background-color: #fff;
 		text-align: right;
@@ -133,26 +136,26 @@ nav {
 }
 
 .nav-bar ul {
- 	
+
 }
 
 .nav-bar li {
-	font-weight: 500;
+		font-weight: 500;
   	text-transform: uppercase;
   	display: inline-block;
-  	margin-left: 10px; 
+  	margin-left: 10px;
   	text-transform: uppercase;
 }
 
 .nav-bar a {
-	color: #808080;
+		color: #808080;
     border-bottom: none;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.nav-bar a:hover	{ 
-    color: black; 
+.nav-bar a:hover	{
+    color: black;
     text-decoration: none;
     border-bottom: solid 1px #000 ;
     background-color: #fff;
@@ -160,16 +163,18 @@ nav {
 }
 
 header {
-	grid-area: header;
-	background-color: #fff;
-	position: relative;
+		grid-area: header;
+		background-color: #fff;
+		position: relative;
 }
 
 header li {
-	display: inline-block;
+		display: inline-block;
 }
 
+
 /*   Main Content    */
+
 
 main {
 	height: 1200px;
@@ -179,7 +184,7 @@ main {
 	padding-right: 10px;
 }
 
-article {	
+article {
 	margin-bottom: 150px;
 }
 
@@ -233,7 +238,6 @@ article li {
 	height: auto;
 	float: right;
 	margin: 0 -100px 5px 10px;
-
 }
 
 .img-left {
@@ -271,7 +275,7 @@ blockquote {
 	font-size: 20px;
 	margin: 20px 0 20px 0;
 	border-left: solid 3px ;
-	padding-left: 10px; 
+	padding-left: 10px;
 	width: 560px;
 
 }
@@ -279,8 +283,7 @@ blockquote {
 .project-card {
 	width: 620px;
 	float: left;
-	margin-right: 20px; 
-
+	margin-right: 20px;
 }
 
 .project-card-caption {
@@ -348,7 +351,7 @@ blockquote {
 
 a.btn {
 	color  : black;
-	background-color: #fff; 
+	background-color: #fff;
     border: solid 3px #000;
     padding: 10px;
     text-decoration: none;
@@ -385,11 +388,11 @@ a:hover.btn  {
 .articles-meta {
 	display: block;
 	width: 100%;
-	margin: 20px 0px 20px; 
+	margin: 20px 0px 20px;
 }
 
 table {
-    width               : 100%; 
+    width               : 100%;
     margin-bottom       : 1.6em;
     border-collapse: collapse;
     border-spacing: 0;
@@ -402,7 +405,7 @@ th {
     padding-top         : 1em;
     padding-bottom      : .4em;
     border-bottom       : solid 1px;
-    font-size           : 16px; 
+    font-size           : 16px;
 }
 
 tr {
@@ -435,6 +438,3 @@ footer {
 footer li {
 	display: inline-block;
 }
-
-
-
